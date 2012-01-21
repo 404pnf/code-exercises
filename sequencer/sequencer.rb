@@ -16,12 +16,11 @@
 # In any programming language you want
 # (Python/Ruby/JavaScript/Java/whatever,) can you write a function that,
 # given some number n as an input, prints out the first n items in the
-# sequence
+# sequence.
 
 def sequence(n)
   line = "1"
   puts line
-  puts "============="
   n.times do
     counter = [] ; vals = []
     line.each_char do |char|
@@ -35,11 +34,10 @@ def sequence(n)
     end
     line = counter.zip(vals).flatten.join
     puts line
-    puts "============="
   end
 end
 
-sequence(100)
+sequence(15)
 
 # 1
 # 11
@@ -52,3 +50,8 @@ sequence(100)
 # 31131211131221
 # 13211311123113112211
 # 11131221133112132113212221
+# 3113112221232112111312211312113211
+# 1321132132111213122112311311222113111221131221
+# 11131221131211131231121113112221121321132132211331222113112211
+# 311311222113111231131112132112311321322112111312211312111322212311322113212221
+# 132113213221133112132113311211131221121321131211132221123113112221131112311332111213211322211312113211
